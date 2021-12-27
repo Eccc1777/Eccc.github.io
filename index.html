@@ -1,0 +1,43 @@
+<html lang="en"><head>
+	<title>隨機亂數產生器 RANDOM NUMBER GENERATOR » 25sprout Lab</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body style="zoom: 1;">
+
+	<header>
+	<a id="title"><img src="https://lab.25sprout.com/images/logo.png"></a>
+</header>
+	<div class="lab-name">
+		RANDOM NUMBER GENERATOR
+	</div>
+	<div class="lab-detail">
+		不重複隨機亂數產生器，可用於抽獎或是大冒險唷！
+	</div>
+
+	<div class="clear-both"></div>
+
+	<div class="content-container">
+		<div class="type-selector">
+			<div class="type active" rel="NUMBER">連續數字</div>
+			<div class="type" rel="STRING">貼上字串</div>
+		</div>
+		<div class="setting-area">
+			<div class="NUMBER-setting type-setting-wrapper" style="display: block;">
+				從 <input type="text" id="minLimit" class="input-large" placeholder="ex. 0">
+				到 <input type="text" id="maxLimit" class="input-large" placeholder="ex. 100"> 選 <input type="text" id="rndCount" class="input-large" placeholder="ex. 5"> 個數字<br>
+			</div>
+			<div class="STRING-setting type-setting-wrapper" style="display: none;">
+				<textarea id="string-data" style="width:60%; height:240px;" placeholder="每個字串以換行分隔"></textarea>
+				選 <input type="text" id="rndStrCount" class="input-large" placeholder="ex. 5"> 個字串<br>
+			</div>
+			<br>
+			<button id="btnMkRnd" class="btn btn-primary btn-large">
+				<i class="icon-circle-arrow-right icon-white"></i>
+				隨機產生
+			</button>
+		</div>
+		<div id="rndResult"></div>
+		</div>
+	</div>
+</body></html>
